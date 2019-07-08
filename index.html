@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>bakery</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+
+		<!--导航条-->
+		<div class="header" id="home"></div>
+		<div class="content white navbar-fixed-top">
+			<nav class="navbar navbar-default ">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+						<a class="navbar-brand" href="index.html">
+							<h1>Bakery In</h1>
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<nav>
+							<ul class="nav navbar-nav list">
+
+								<li>
+									<a href="#home">Home</a>
+								</li>
+								<li id="corresponding">
+									<a href="#welcome">Welcome</a>
+								</li>
+								<li>
+									<a href="#about">About</a>
+								</li>
+								<li>
+									<a href="#popular">Popular</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#team">Staff</a>
+										</li>
+										<!--<li class="divider"></li>-->
+										<li>
+											<a href="#review">Review</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#mail">Mail Us</a>
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</nav>
+		</div>
+		</div>
+
+		<!--轮播-->
+		<div id="myCarousel" class="carousel slide" date-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="col-md-6 slider_left">
+								<h2>facilisis non est ut, <span>bibendum finibus est.</span></h2>
+								<p>Nulla tempus mollis nulla, a sollicitudin orci posuere sit amet. Nam sed consectetur nulla, in auctor nunc.</p>
+								<a href="#" class="hvr-bounce-to-right read scroll"><span class="fa fa-birthday-cake" aria-hidden="true"></span>Read More</a>
+							</div>
+							<div class="col-md-6 slider_right">
+								<img src="img/cake.png" alt="cake1" />
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item item2">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="col-md-6 slider_left">
+								<h3>facilisis non est ut, <span>bibendum finibus est.</span></h3>
+								<p>Nulla tempus mollis nulla, a sollicitudin orci posuere sit amet. Nam sed consectetur nulla, in auctor nunc.</p>
+								<a href="#about" class="hvr-bounce-to-right read scroll"><span class="fa fa-birthday-cake" aria-hidden="true"></span>Read More</a>
+							</div>
+							<div class="col-md-6 slider_right">
+								<img src="img/cake1.png" alt="cake1" />
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item item3">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="col-md-6 slider_left">
+								<h3>facilisis non est ut, <span>bibendum finibus est.</span></h3>
+								<p>Nulla tempus mollis nulla, a sollicitudin orci posuere sit amet. Nam sed consectetur nulla, in auctor nunc.</p>
+								<a href="#about" class="hvr-bounce-to-right read scroll"><span class="fa fa-birthday-cake" aria-hidden="true"></span>Read More</a>
+							</div>
+							<div class="col-md-6 slider_right">
+								<img src="img/cake2.png" alt="cake1" />
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item item4">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="col-md-6 slider_left">
+								<h3>facilisis non est ut, <span>bibendum finibus est.</span></h3>
+								<p>Nulla tempus mollis nulla, a sollicitudin orci posuere sit amet. Nam sed consectetur nulla, in auctor nunc.</p>
+								<a href="#about" class="hvr-bounce-to-right read scroll"><span class="fa fa-birthday-cake" aria-hidden="true"></span>Read More</a>
+							</div>
+							<div class="col-md-6 slider_right">
+								<img src="img/cake3.png" alt="cake1" />
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="fa fa-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="fa fa-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<!--welcome to bakery in-->
+		<div class="welcome" id="welcome">
+			<div class="container">
+				<div class="col-md-6 welcome-w3lright">
+					<div class="video-grid-single-page-agileits">
+						<div data-video="qvtjaAW3m-E" id="video"> <img src="img/about.png" alt="" class="img-responsive" /> </div>
+					</div>
+				</div>
+				<div class="col-md-6 welcome_left">
+					<h3 class="agileits-title">Welcome To Bakery In</h3>
+					<h4>Donec in nisi non ipsum luctus interdi est. Cras ipsum augue, facilisis non estut, bibendum finibus.</h4>
+					<p>Phasellus sed semper dolor, sed sodales erat. Donec at mi nunc. Suspendisse dictum lorem nec velit scelerisque, ac egestas sem tempor. Integer at facilisis enim. Vestibulum tristique consequat finibus. Donec ut elementum lorem, id dignissim neque. Curabitur commodo, odio sit amet vestibulum pretium, urna quam tincidunt elit, a tempus ex urna sit amet tortor. Nulla volutpat pulvinar interdum. Mauris vel malesuada magna, in venenatis erat. Vestibulum volutpat faucibus semper.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+		<!--Know More About-->
+		<div class="about" id="about">
+			<div class="container">
+				<div class="wthree_head_section">
+					<h3 class="heading">Know More About Our Bakery In</h3>
+				</div>
+				<div class="agile_wthree_inner_grids">
+					<div class="col-md-6 about_agileinfo">
+						<h4>Muisque sit amet sapien</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s but also the leap into electronic typesetting dolor amet.</p>
+						<div class="mid-inner-info">
+							<div class="col-md-6 mid-inner-sec one">
+								<span class="fa fa-birthday-cake" aria-hidden="true"></span>
+								<h5>Delicious Cakes</h5>
+								<p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+
+							</div>
+							<div class="col-md-6 mid-inner-sec">
+								<span class="fa fa-cutlery" aria-hidden="true"></span>
+								<h5>Cheesecake Slices</h5>
+								<p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-6 about_agileinfo">
+						<div class="mid-inner-info">
+							<div class="col-md-6 mid-inner-sec one">
+								<span class="fa fa-birthday-cake" aria-hidden="true"></span>
+								<h5>Baked Cakes</h5>
+								<p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+
+							</div>
+							<div class="col-md-6 mid-inner-sec">
+								<span class="fa fa-spoon" aria-hidden="true"></span>
+								<h5>Fresh Cakes</h5>
+								<p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+
+							</div>
+							<div class="clearfix"></div>
+							<h4>Muisque sit amet sapien</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s but also the leap into electronic typesetting dolor amet.</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--Most Popular Cakes-->
+
+		<div class="popular_cakes" id="popular">
+			<div class="container">
+				<h3 class="heading">Most Popular cakes</h3>
+				<div class="cakes_grids">
+					<div class="col-md-4">
+						<div class="cakes_grid1">
+							<a href="#">
+								<img src="img/c1.jpg" alt="popular cakes" />
+								<h3>Sponge Cake</h3>
+								<p>Vestibulum volutpat faucibus semper</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="cakes_grid1">
+							<a href="#" class="playShow">
+								<img src="img/c2.jpg" alt="popular cakes" />
+								<h3>Dessert Cake</h3>
+								<p>Vestibulum volutpat faucibus semper</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="cakes_grid1">
+							<a href="#">
+								<img src="img/c3.jpg" alt="popular cakes" />
+								<h3>Cream Cake</h3>
+								<p>Vestibulum volutpat faucibus semper</p>
+							</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="cakes_bottom_grids">
+						<div class="col-md-4">
+							<div class="cakes_grid1">
+								<a href="#">
+									<img src="img/c4.jpg" alt="popular cakes" />
+									<h3>Cream Cake</h3>
+									<p>Vestibulum volutpat faucibus semper</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="cakes_grid1">
+								<a href="#">
+									<img src="img/c5.jpg" alt="popular cakes" />
+									<h3>Chocolate Cake</h3>
+									<p>Vestibulum volutpat faucibus semper</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="cakes_grid1">
+								<a href="#">
+									<img src="img/c6.jpg" alt="popular cakes" />
+									<h3>Butter Cake</h3>
+									<p>Vestibulum volutpat faucibus semper</p>
+								</a>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--our staff-->
+
+		<div class="team" id="team">
+			<div class="agile_dot_info two">
+				<div class="container">
+					<h3 class="heading">Our Staff</h3>
+					<div class="agileits_team_grids">
+						<div class="col-md-3">
+							<div class="agileits_team_grid">
+								<div class="agileits_team_grid_figure">
+									<img src="img/chef1.jpg" alt=" " class="img-responsive" />
+								</div>
+								<h4>Jane Robert</h4>
+								<div class="social-icon">
+									<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+									<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+									<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="agileits_team_grid">
+								<div class="agileits_team_grid_figure">
+									<img src="img/chef2.jpg" alt=" " class="img-responsive" />
+								</div>
+								<h4>James Doe</h4>
+								<div class="social-icon">
+									<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+									<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+									<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="agileits_team_grid">
+								<div class="agileits_team_grid_figure">
+									<img src="img/chef3.jpg" alt=" " class="img-responsive" />
+								</div>
+								<h4>Laura Olivia</h4>
+								<div class="social-icon">
+									<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+									<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+									<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="agileits_team_grid">
+								<div class="agileits_team_grid_figure">
+									<img src="img/chef4.jpg" alt=" " class="img-responsive" />
+								</div>
+								<h4>William James</h4>
+								<div class="social-icon">
+									<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+									<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+									<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--custome-->
+		<div class="testimonials" id="review">
+			<div class="container">
+				<h3 class="heading">Our Customer reviews</h3>
+				<div class="testimonials-grids">
+					<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s" style="height: 384px;">
+						<div class="wmuSliderWrapper">
+							<article style="position: absolute; width: 100%; opacity: 1;">
+								<div class="banner-wrap">
+									<div class="testimonials-grid">
+										<div class="testimonials-grid-left">
+											<img src="img/t1.jpg" alt=" " class="img-responsive" />
+										</div>
+										<div class="testimonials-grid-right">
+											<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. Duis maximus, velit posuere rutrum tempus, nibh ligula semper felis.</p>
+											<h4>Richard Doe</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--描写-->
+		<div class="subscribe">
+			<div class="container">
+				<h3 class="heading">Subscribe To Get Notifications</h3>
+				<div class="subscribe-grid">
+					<form action="#" method="post">
+						<input type="email" placeholder="Enter Your Email" name="email" required="">
+						<button class="btn1"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="footer" id="mail">
+			<div class="container">
+				<div class="w3_agile_footer_grids">
+					<ul class="col-md-3 col-xs-6 w3_agile_footer_grid right">
+						<h3>Opening Hours</h3>
+						<li><span class="fa fa-clock-o" aria-hidden="true"></span>Monday <span>9:00 - 14:00</span></li>
+						<li><span class="fa fa-clock-o" aria-hidden="true"></span>Tuesday <span>9:00 - 14:00</span></li>
+						<li><span class="fa fa-clock-o" aria-hidden="true"></span>Wednesday <span>9:00 - 14:00</span></li>
+						<li><span class="fa fa-clock-o" aria-hidden="true"></span>Thursday <span>9:00 - 14:00</span></li>
+						<li><span class="fa fa-clock-o" aria-hidden="true"></span>Friday <span>9:00 - 14:00</span></li>
+						<li><span class="fa fa-clock-o" aria-hidden="true"></span>Saturday <span>9:00 - 14:00</span></li>
+						<li><span class="fa fa-clock-o" aria-hidden="true"></span>Sunday <span>Closed</span></li>
+					</ul>
+					<div class="col-md-3 col-xs-6 w3_agile_footer_grid">
+						<h3>Navigation</h3>
+						<ul class="agileits_w3layouts_footer_grid_list">
+							<li>
+								<span class="fa fa-angle-double-right" aria-hidden="true"></span>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<span class="fa fa-angle-double-right" aria-hidden="true"></span>
+								<a href="about.html">About Us</a>
+							</li>
+							<li>
+								<span class="fa fa-angle-double-right" aria-hidden="true"></span>
+								<a href="services.html">Services</a>
+							</li>
+							<li>
+								<span class="fa fa-angle-double-right" aria-hidden="true"></span>
+								<a href="gallery.html">Gallery</a>
+							</li>
+							<li>
+								<span class="fa fa-angle-double-right" aria-hidden="true"></span>
+								<a href="contact.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-xs-6 w3ls_address_mail_footer_grids w3_agile_footer_grid">
+						<h3>Contact Us</h3>
+						<div class="w3ls_footer_grid_left">
+							<div class="w3l-icon">
+								<span class="fa fa-map-marker" aria-hidden="true"></span>
+							</div>
+							<p>2055 PR Cross Road,
+								<span>Kennebec SD, USA.</span>
+							</p>
+							<div class="clearfix"></div>
+						</div>
+						<div class="w3ls_footer_grid_left">
+							<div class="w3l-icon">
+								<span class="fa fa-phone" aria-hidden="true"></span>
+							</div>
+							<p>+(112) 455 312 671
+								<span>+(029) 664  951 859</span>
+							</p>
+							<div class="clearfix"></div>
+						</div>
+						<div class="w3ls_footer_grid_left">
+							<div class="w3l-icon">
+								<span class="fa fa-envelope-o" aria-hidden="true"></span>
+							</div>
+							<p>
+								<a href="mailto:info@example.com">mail@example1.com</a>
+								<span>
+								<a href="mailto:info@example.com">mail@example2.com</a>
+							</span>
+							</p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 w3_agile_footer_grid">
+						<h3>Instagram Posts</h3>
+						<div class="w3_agileits_footer_grid_left">
+							<a href="#">
+								<img src="img/post1.jpg" alt=" " class="img-responsive" />
+							</a>
+						</div>
+						<div class="w3_agileits_footer_grid_left">
+							<a href="#">
+								<img src="img/post2.jpg" alt=" " class="img-responsive" />
+							</a>
+						</div>
+						<div class="w3_agileits_footer_grid_left">
+							<a href="#">
+								<img src="img/post3.jpg" alt=" " class="img-responsive" />
+							</a>
+						</div>
+						<div class="w3_agileits_footer_grid_left">
+							<a href="#">
+								<img src="img/post4.jpg" alt=" " class="img-responsive" />
+							</a>
+						</div>
+						<div class="w3_agileits_footer_grid_left">
+							<a href="#">
+								<img src="img/post5.jpg" alt=" " class="img-responsive" />
+							</a>
+						</div>
+						<div class="w3_agileits_footer_grid_left">
+							<a href="#">
+								<img src="img/post6.jpg" alt=" " class="img-responsive" />
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="agileinfo_copyright">
+					<p>Copyright &copy; 2018.Company name All rights reserved.More Templates
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
